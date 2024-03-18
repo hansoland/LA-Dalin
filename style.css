@@ -1,0 +1,269 @@
+li {
+    list-style: none;
+}
+
+
+/* --------Search------------- */
+
+.search-container {
+    position: relative;
+    width: 300px;
+}
+
+#searchInput {
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.result-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.result-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* -----------End Search------------- */
+
+
+/* ------------------Menu Bar------------------------ */
+
+.menu ul li i {
+    color: black;
+    padding: 7px 14px;
+}
+
+.menu ul li .active {
+    color: blue;
+    position: relative;
+}
+
+.active::after {
+    content: '';
+    background-color: blue;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    left: 0px;
+}
+
+.menu ul li i:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* ----------------End Menu Bar----------------------- */
+
+.point {
+    color: green;
+    position: absolute;
+    bottom: 0;
+    left: 28px;
+}
+
+.comment-icon {
+    position: absolute;
+    bottom: -8px;
+    left: 24px;
+    z-index: 3;
+    padding: 2px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.top-box {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.top-box .story {
+    width: 95%;
+    height: 180px;
+    margin: 0 2px;
+    overflow: hidden;
+    box-shadow: 0 1px 9px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.top-box .story img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.story .upload {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.upload i {
+    position: relative;
+    bottom: 10px;
+}
+
+.top-box .story-friend {
+    width: 95%;
+    height: 180px;
+    margin: 0 2px;
+    overflow: hidden;
+    background-image: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 1px 9px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.top-box .story-friend img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.friend-profile {
+    position: relative;
+    bottom: 175px;
+    margin-left: 8px;
+    width: 30px;
+    height: 30px;
+}
+
+.friend-profile img {
+    border-radius: 50%;
+    border: 3px solid blue;
+}
+
+.friend-name {
+    position: relative;
+    bottom: 80px;
+    width: 100%;
+    height: 60px;
+    padding-top: 10px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 1) 90%);
+    cursor: pointer;
+}
+
+.friend-name p {
+    padding: 0 9px;
+    font-size: 13px;
+}
+
+.after-story ul li {
+    font-size: 12px;
+}
+
+.profile-post {
+    font-size: 13px;
+}
+
+.fa-circle {
+    font-size: 4px;
+}
+
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.messenger-container {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.messenger-header {
+    background-color: #4267B2;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.conversation-list {
+    padding: 10px;
+}
+
+.conversation {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.conversation.active {
+    background-color: #f0f0f0;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.info {
+    flex: 1;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.message-area {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.message-area textarea {
+    flex: 1;
+    resize: none;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.message-area button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: #4267B2;
+    color: #fff;
+    cursor: pointer;
+}
+
+.font {
+    font-size: 12px;
+}

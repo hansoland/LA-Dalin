@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- -------------Header-------------------- -->
+    <header class="d-flex container-fluid align-items-center justify-content-between p-2 " style="height: 50px;">
+        <section class="col-3 d-flex align-items-center h-100 ">
+            <div class="logo"><img src="/image/logos_facebook.png" width="35px" alt=""></div>
+            <div class="search-container h-100 ms-3">
+                <input type="text" class="rounded-pill" id="searchInput" placeholder="Search..." autocomplete="off">
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </section>
+        <nav class="menu col-5 h-100 align-items-center">
+            <ul class="d-flex justify-content-evenly">
+                <li>
+                    <i class="fa-solid active fa-house rounded-pill"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-group rounded-pill"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-tv rounded-pill"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-store rounded-pill"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle-user rounded-pill"></i>
+                </li>
+            </ul>
+        </nav>
+        <div class="icon col-3 align-items-center h-100">
+            <ul class="w-75 float-end d-flex justify-content-evenly">
+                <li><i class="fa-solid fa-bars p-2 bg-dark-subtle rounded-circle"></i></li>
+                <li><i id="chart" class="fa-brands fa-facebook-messenger p-2 bg-dark-subtle rounded-circle  "></i></li>
+                <li><i id="notication-icon" class="fa-solid fa-bell p-2 bg-dark-subtle rounded-circle"></i></li>
+                <li><img src="./image/profile.jpg" class="rounded-circle" width="32px" alt="">
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- -------------------End Header--------------------- -->
+
+    <!-- body -->
+    <main class="w-100 bg-secondary-subtle position-relative p-2 d-flex justify-content-between">
+        <div class=" col-12 vh-100 position-absolute top-0 " id="messenger">
+            <div class="col-8 "></div>
+            <div class="col-3 bg-light h-75 p-2 rounded text-black z-3 ">
+                <div class="w-100 p-2 position-relative d-flex align-items-center">
+                    <p>Charts</p>
+                    <p class="position-absolute end-0"><i class="fa-solid fa-ellipsis mx-1 "></i><i class="fa-solid fa-maximize mx-1 "></i><i class="fa-regular fa-pen-to-square mx-1"></i></p>
+                </div>
+                <div class="w-100 d-flex justify-content-center ">
+                    <input type="text" class="rounded-pill bg-secondary-subtle border-0" width="100%" name="" id="">
+                </div>
+                <div class="d-flex mt-2 font">
+                    <p class="mx-2 px-2 py-1 bg-dark-subtle rounded-pill">Inbox</p>
+                    <p class="mx-2 px-2 py-1 rounded-pill">Communities</p>
+                </div>
+                <div class="h-50 overflow-y-scroll">
+                    <section class="w-100 d-flex align-items-center p-2 position-relative">
+                        <img src="./image/acleda.png" class="rounded-circle" width="30px" height="30px" alt="">
+                        <div class="ms-2">
+                            <p class="m-0">ACLIDA Bank Plc.</p>
+                            <p class="m-0 w-100 align-items-center opacity-50 d-flex">Lorem ipsum consectetur..</p>
+                        </div>
+                    </section>
+                    <section class="w-100 d-flex align-items-center p-2 position-relative">
+                        <img src="./image/acleda.png" class="rounded-circle" width="30px" height="30px" alt="">
+                        <div class="ms-2">
+                            <p class="m-0">ACLIDA Bank Plc.</p>
+                            <p class="m-0 w-100 align-items-center opacity-50 d-flex">Lorem ipsum consectetur..</p>
+                        </div>
+                    </section>
+                    <section class="w-100 d-flex align-items-center p-2 position-relative">
+                        <img src="./image/acleda.png" class="rounded-circle" width="30px" height="30px" alt="">
+                        <div class="ms-2">
+                            <p class="m-0">ACLIDA Bank Plc.</p>
+                            <p class="m-0 w-100 align-items-center opacity-50 d-flex">Lorem ipsum consectetur..</p>
+                        </div>
+                    </section>
+                    <section class="w-100 d-flex align-items-center p-2 position-relative">
+                        <img src="./image/acleda.png" class="rounded-circle" width="30px" height="30px" alt="">
+                        <div class="ms-2">
+                            <p class="m-0">ACLIDA Bank Plc.</p>
+                            <p class="m-0 w-100 align-items-center opacity-50 d-flex">Lorem ipsum consectetur..</p>
+                        </div>
+                    </section>
+                    <section class="w-100 d-flex align-items-center p-2 position-relative">
+                        <img src="./image/acleda.png" class="rounded-circle" width="30px" height="30px" alt="">
+                        <div class="ms-2">
+                            <p class="m-0">ACLIDA Bank Plc.</p>
+                            <p class="m-0 w-100 align-items-center opacity-50 d-flex">Lorem ipsum consectetur..</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------notication------------------- -->
+        <div class=" col-12 vh-100 position-absolute top-0 " id="notication">
+            <div class="col-8 "></div>
+            <div class="col-3 bg-light h-100 p-2 rounded text-black z-3 ">
+                <div class="w-100 p-2 position-relative d-flex align-items-center">
+                    <p>Notification</p>
+                    <p class="position-absolute end-0"><i class="fa-solid fa-ellipsis mx-1 "></i>
+                    </p>
+                </div>
+                <div class="d-flex mt-2 font">
+                    <p class="mx-2 px-2 py-1 bg-dark-subtle rounded-pill">All</p>
+                    <p class="mx-2 px-2 py-1 rounded-pill">Unread</p>
+                </div>
+                <div class="h-75 overflow-y-scroll">
+                    <section class="w-100 d-flex align-items-center p-2 position-relative">
+                        <p class="position-relative"><img src="./image/acleda.png" class="rounded-circle" width="30px" height="30px" alt=""><i class="fa-solid fa-comment comment-icon text-light"></i></p>
+                        <div class="ms-2">
+                            <p class="m-0 opacity-75">consectetur adipisicing elit.</p>
+                            <p class="m-0 w-100 align-items-center text-primary font d-flex">2 min</p>
+                        </div>
+                    </section>
+                    <section class="w-100 d-flex align-items-center p-2 position-relative">
+                        <p class="position-relative"><img src="./image/acleda.png" class="rounded-circle" width="30px" height="30px" alt=""><i class="fa-solid fa-comment comment-icon text-light"></i></p>
+                        <div class="ms-2">
+                            <p class="m-0 opacity-75">consectetur adipisicing elit.</p>
+                            <p class="m-0 w-100 align-items-center text-primary font d-flex">2 min</p>
+                        </div>
+                    </section>
+
+                    <section class="w-100 d-flex align-items-center p-2 position-relative">
+                        <p class="position-relative"><img src="./image/acleda.png" class="rounded-circle" width="30px" height="30px" alt=""><i class="fa-solid fa-comment comment-icon text-light"></i></p>
+                        <div class="ms-2">
+                            <p class="m-0 opacity-75">consectetur adipisicing elit.</p>
+                            <p class="m-0 w-100 align-items-center text-primary font d-flex">2 min</p>
+                        </div>
+                    </section>
+
+                    <section class="w-100 d-flex align-items-center p-2 position-relative">
+                        <p class="position-relative"><img src="./image/acleda.png" class="rounded-circle" width="30px" height="30px" alt=""><i class="fa-solid fa-comment comment-icon text-light"></i></p>
+                        <div class="ms-2">
+                            <p class="m-0 opacity-75">consectetur adipisicing elit.</p>
+                            <p class="m-0 w-100 align-items-center text-primary font d-flex">2 min</p>
+                        </div>
+                    </section>
+                    <section class="w-100 d-flex align-items-center p-2 position-relative">
+                        <p class="position-relative"><img src="./image/acleda.png" class="rounded-circle" width="30px" height="30px" alt=""><i class="fa-solid fa-comment comment-icon text-light"></i></p>
+                        <div class="ms-2">
+                            <p class="m-0 opacity-75">consectetur adipisicing elit.</p>
+                            <p class="m-0 w-100 align-items-center text-primary font d-flex">2 min</p>
+                        </div>
+                    </section>
+                    <section class="w-100 d-flex align-items-center p-2 position-relative">
+                        <p class="position-relative"><img src="./image/acleda.png" class="rounded-circle" width="30px" height="30px" alt=""><i class="fa-solid fa-comment comment-icon text-light"></i></p>
+                        <div class="ms-2">
+                            <p class="m-0 opacity-75">consectetur adipisicing elit.</p>
+                            <p class="m-0 w-100 align-items-center text-primary font d-flex">2 min</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- --------------Left Path-----------------------  -->
+        <div class="right col-3 p-2 ">
+            <ul class="border p-1 border-1">
+                <li class="align-items-center py-1"><img src="./image/profile.jpg" class="rounded-circle me-2 ms-1" width="32px" alt="">TITB Group</li>
+                <li class="align-items-center py-1"><img src="./image/profile.jpg" class="rounded-circle me-2 ms-1" width="32px" alt=""> Fine Friends</li>
+                <li class="align-items-center py-1"><i class="fa-solid fa-users p-2"></i> Group</li>
+                <li class="align-items-center py-1"><i class="fa-solid fa-clock-rotate-left p-2"></i> Memories</li>
+                <li class="align-items-center py-1"><i class="fa-solid fa-bookmark p-2"></i> Saved</li>
+                <li class="align-items-center py-1"><i class="fa-solid fa-tv p-2"></i> Video</li>
+                <li class="align-items-center py-1"><i class="fa-solid fa-chevron-down p-2 rounded-circle bg-dark-subtle"></i> See more</li>
+            </ul>
+            <hr />
+            <p class="">Your shortcuts <a href="" class="float-end link-underline link-underline-opacity-0">Edit</a></p>
+            <ul class="border p-1 border-1">
+                <li class="align-items-center py-1"><img src="./image/profile.jpg" class="rounded me-2 ms-1" width="32px" alt="">IT Job in Cambodia</li>
+                <li class="align-items-center py-1"><img src="./image/profile.jpg" class="rounded me-2 ms-1" width="32px" alt="">IT & MEDIA CAMBODIA</li>
+                <li class="align-items-center py-1"><img src="./image/profile.jpg" class="rounded me-2 ms-1" width="32px" alt="">IT Job & Technology</li>
+                <li class="align-items-center py-1"><img src="./image/profile.jpg" class="rounded me-2 ms-1" width="32px" alt="">IT-Share</li>
+                <li class="align-items-center py-1"><img src="./image/profile.jpg" class="rounded me-2 ms-1" width="32px" alt="">(Job Cambodia)</li>
+                <li class="align-items-center py-1"><i class="fa-solid fa-chevron-down p-2 rounded-circle bg-dark-subtle"></i> See more</li>
+            </ul>
+        </div>
+        <!-- --------------End Left Path-----------------------  -->
+
+        <!-- --------------- Center path ------------------------  -->
+        <div class="col-5 h-auto border">
+            <!-- -------------------story------------------- -->
+            <section class="top-box bg-white h-auto p-1 py-2 rounded">
+                <div class="story  rounded">
+                    <img src="./image/profile.jpg" alt="">
+                    <div class="upload">
+                        <i class="fa-solid fa-plus p-1 bg-primary rounded-circle  mx-auto my-0"></i>
+                        <p class=" fw-bold ">Add Your Story</p>
+                    </div>
+                </div>
+                <div class="story-friend rounded">
+                    <img src="./image/profile.jpg" alt="">
+                    <div class="friend-profile">
+                        <img src="./image/profile.jpg" alt="">
+                    </div>
+                    <div class="friend-name">
+                        <p class="fw-bold text-light">LA Dalin</p>
+                    </div>
+                </div>
+                <div class=" story-friend rounded ">
+                    <img src="./image/profile.jpg " alt=" ">
+                    <div class="friend-profile">
+                        <img src="./image/profile.jpg" alt="">
+                    </div>
+                    <div class="friend-name">
+                        <p class="fw-bold text-light">LA Dalin</p>
+                    </div>
+                </div>
+                <div class="story-friend rounded ">
+                    <img src="./image/profile.jpg " alt=" ">
+                    <div class="friend-profile">
+                        <img src="./image/profile.jpg" alt="">
+                    </div>
+                    <div class="friend-name">
+                        <p class="fw-bold text-light">LA Dalin</p>
+                    </div>
+                </div>
+            </section>
+            <!-- -------------------End story------------------- -->
+
+            <section class=" after-story bg-white mt-2 rounded p-2 top-0">
+                <div class="w-100 d-flex">
+                    <img src="./image/profile.jpg" class="rounded-circle me-2" width="30px" alt="">
+                    <input type="text" class="w-100 border-0 bg-dark-subtle rounded-pill">
+                </div>
+                <hr />
+                <ul class="w-100 d-flex align-items-center m-0 p-0 text-black justify-content-between ">
+                    <li class="d-flex align-items-center "><i class="fa-solid fa-camera text-danger me-2"></i> Live Video</li>
+                    <li class="d-flex align-items-center "><i class="fa-solid fa-image text-success me-2"></i> Photo/Video</li>
+                    <li class="d-flex align-items-center "><i class="fa-solid fa-face-smile text-warning me-2"></i> Feeling/activity</li>
+                </ul>
+            </section>
+
+            <section class=" post p-1 rounded bg-white mt-2 ">
+                <div class="w-100 d-flex align-items-center p-2 position-relative profile-post">
+                    <img src="./image/acleda.png" class="rounded-circle" width="30px" height="30px" alt="">
+                    <div class="ms-2">
+                        <p class="m-0">ACLIDA Bank Plc.</p>
+                        <p class="m-0 align-items-center opacity-50 d-flex">1d<i class="fa-solid fa-circle mt-1 ms-1"></i><i class="fa-solid fa-earth-americas mt-1 ms-1"></i></p>
+                    </div>
+                    <p class="position-absolute end-0 fs-6 mt-2"><i class="fa-solid fa-ellipsis mx-1 "></i><i class="fa-solid fa-xmark mx-1 "></i></p>
+                </div>
+                <div class="title p-2 py-1">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, voluptates!</p>
+                </div>
+                <div class="post-image">
+                    <img src="/image/info-acleda.jpg" width="100%" alt="">
+                </div>
+                <hr>
+                <ul class="d-flex justify-content-between  text-black px-1">
+                    <li class="d-flex align-items-center "><i class="fa-regular fa-thumbs-up me-1"></i>Like</li>
+                    <li class="d-flex align-items-center "><i class="fa-regular fa-comment me-1"></i>Comment</li>
+                    <li class="d-flex align-items-center "><i class="fa-solid fa-share me-1"></i>Share</li>
+                </ul>
+            </section>
+            <section class=" post p-1 rounded bg-white mt-2 ">
+                <div class="w-100 d-flex align-items-center p-2 position-relative profile-post">
+                    <img src="./image/acleda.png" class="rounded-circle" width="30px" height="30px" alt="">
+                    <div class="ms-2">
+                        <p class="m-0">ACLIDA Bank Plc.</p>
+                        <p class="m-0 align-items-center d-flex">1d<i class="fa-solid fa-circle mt-1 ms-1"></i><i class="fa-solid fa-earth-americas mt-1 ms-1"></i></p>
+                    </div>
+                    <p class="position-absolute end-0 fs-6 mt-2"><i class="fa-solid fa-ellipsis mx-1 "></i><i class="fa-solid fa-xmark mx-1 "></i></p>
+                </div>
+                <div class="title p-2 py-1">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, voluptates!</p>
+                </div>
+                <div class="post-image">
+                    <img src="/image/info-acleda.jpg" width="100%" alt="">
+                </div>
+                <hr>
+                <ul class="d-flex justify-content-between  text-bl
+                ack px-1">
+                    <li class="d-flex align-items-center "><i class="fa-regular fa-thumbs-up me-1"></i>Like</li>
+                    <li class="d-flex align-items-center "><i class="fa-regular fa-comment me-1"></i>Comment</li>
+                    <li class="d-flex align-items-center "><i class="fa-solid fa-share me-1"></i>Share</li>
+                </ul>
+            </section>
+            <section class=" post p-1 rounded bg-white mt-2 ">
+                <div class="w-100 d-flex align-items-center p-2 position-relative profile-post">
+                    <img src="./image/acleda.png" class="rounded-circle" width="30px" height="30px" alt="">
+                    <div class="ms-2">
+                        <p class="m-0">ACLIDA Bank Plc.</p>
+                        <p class="m-0 align-items-center d-flex">1d<i class="fa-solid fa-circle mt-1 ms-1"></i><i class="fa-solid fa-earth-americas mt-1 ms-1"></i></p>
+                    </div>
+                    <p class="position-absolute end-0 fs-6 mt-2"><i class="fa-solid fa-ellipsis mx-1 "></i><i class="fa-solid fa-xmark mx-1 "></i></p>
+                </div>
+                <div class="title p-2 py-1">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, voluptates!</p>
+                </div>
+                <div class="post-image">
+                    <img src="/image/info-acleda.jpg" width="100%" alt="">
+                </div>
+                <hr>
+                <ul class="d-flex justify-content-between  text-bl
+                ack px-1">
+                    <li class="d-flex align-items-center "><i class="fa-regular fa-thumbs-up me-1"></i>Like</li>
+                    <li class="d-flex align-items-center "><i class="fa-regular fa-comment me-1"></i>Comment</li>
+                    <li class="d-flex align-items-center "><i class="fa-solid fa-share me-1"></i>Share</li>
+                </ul>
+            </section>
+            <section class=" post p-1 rounded bg-white mt-2 ">
+                <div class="w-100 d-flex align-items-center p-2 position-relative profile-post">
+                    <img src="./image/acleda.png" class="rounded-circle" width="30px" height="30px" alt="">
+                    <div class="ms-2">
+                        <p class="m-0">ACLIDA Bank Plc.</p>
+                        <p class="m-0 align-items-center d-flex">1d<i class="fa-solid fa-circle mt-1 ms-1"></i><i class="fa-solid fa-earth-americas mt-1 ms-1"></i></p>
+                    </div>
+                    <p class="position-absolute end-0 fs-6 mt-2"><i class="fa-solid fa-ellipsis mx-1 "></i><i class="fa-solid fa-xmark mx-1 "></i></p>
+                </div>
+                <div class="title p-2 py-1">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, voluptates!</p>
+                </div>
+                <div class="post-image">
+                    <img src="/image/info-acleda.jpg" width="100%" alt="">
+                </div>
+                <hr>
+                <ul class="d-flex justify-content-between  text-bl
+                ack px-1">
+                    <li class="d-flex align-items-center "><i class="fa-regular fa-thumbs-up me-1"></i>Like</li>
+                    <li class="d-flex align-items-center "><i class="fa-regular fa-comment me-1"></i>Comment</li>
+                    <li class="d-flex align-items-center "><i class="fa-solid fa-share me-1"></i>Share</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- ---------------End Center path ------------------------  -->
+        <!-- ----------------Rigth Path--------------------- -->
+
+        <div class="col-3 border p-1 ">
+
+            <ul class="p-1 ">
+                <li class="py-1 ">Your Pages and profiles <a href=" " class="float-end link-underline link-underline-opacity-0 ">Edit</a></li>
+                <li class="align-items-center pt-2 p-1 "><img src="./image/profile.jpg " class="rounded-circle me-2 ms-1 " width="32px " alt=" ">TITB Group</li>
+                <li class="align-items-center p-1 "><i class="fa-solid px-1 fa-bullhorn "></i>Switch to Page</li>
+                <li class="align-items-center p-1 "><i class="fa-regular px-1 fa-file-lines "></i> Create promotion</li>
+            </ul>
+            <hr />
+            <ul class="p-1 ">
+                <li class="py-1 ">Contact
+                    <p class="float-end "><i class="fa-solid fa-magnifying-glass mx-1 "></i><i class="fa-solid fa-ellipsis mx-1 "></i></p>
+                </li>
+                <li class="align-items-center d-flex py-1 ">
+                    <p class="position-relative me-3"><img src="./image/profile.jpg " class="rounded-circle ms-1 " width="32px " alt=" "><i class="fa-solid fa-circle point"></i></p>
+                    <p>TITB Group</p>
+                </li>
+                <li class="align-items-center d-flex py-1 ">
+                    <p class="position-relative me-3"><img src="./image/profile.jpg " class="rounded-circle ms-1 " width="32px " alt=" "><i class="fa-solid fa-circle point"></i></p>
+                    <p>LA Dalin</p>
+                </li>
+                <li class="align-items-center d-flex py-1 ">
+                    <p class="position-relative me-3"><img src="./image/profile.jpg " class="rounded-circle ms-1 " width="32px " alt=" "><i class="fa-solid fa-circle point"></i></p>
+                    <p>Sheang</p>
+                </li>
+                <li class="align-items-center d-flex py-1 ">
+                    <p class="position-relative me-3"><img src="./image/profile.jpg " class="rounded-circle ms-1 " width="32px " alt=" "><i class="fa-solid fa-circle point"></i></p>
+                    <p>Lin sea</p>
+                </li>
+                <li class="align-items-center d-flex py-1 ">
+                    <p class="position-relative me-3"><img src="./image/profile.jpg " class="rounded-circle ms-1 " width="32px " alt=" "><i class="fa-solid fa-circle point"></i></p>
+                    <p>sokleang</p>
+                </li>
+                <li class="align-items-center d-flex py-1 ">
+                    <p class="position-relative me-3"><img src="./image/profile.jpg " class="rounded-circle ms-1 " width="32px " alt=" "><i class="fa-solid fa-circle point"></i></p>
+                    <p>heang</p>
+                </li>
+            </ul>
+        </div>
+        <!-- ----------------End Rigth Path--------------------- -->
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz " crossorigin="anonymous "></script>
+<script src="https://kit.fontawesome.com/e6c78c3146.js " crossorigin="anonymous "></script>
+<script src="main.js"></script>
+
+</html>
